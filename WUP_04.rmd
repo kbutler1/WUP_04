@@ -14,6 +14,11 @@ require(tigerstats)
 mydata<- read.csv(file="GSScsv.csv")
 ```
 
+
+```{r eval=FALSE}
+mydata <- mydata %>%
+mutate(across(where(is.character), as.factor))
+```
 # Introduction
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
@@ -26,7 +31,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-Using Chatgpt and CAndP helper files close numerical data categorical data in the GSS data set. We will compare WORDSUM and how it effected by education level.
+Using Chatgpt and CandP helper files close numerical data categorical data in the GSS data set. We will compare WORDSUM and how it effected by education level.
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -37,9 +42,26 @@ Using Chatgpt and CAndP helper files close numerical data categorical data in th
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+
+
+```{r include=TRUE,echo=FALSE}
+ggplot(data = mydata, aes(x = DEGREE, y = WORDSUM) ) +
+geom_boxplot ( notch=FALSE , outlier.colour = "red" , outlier.size = 2 , fill = "darkgray" ) +
+stat_boxplot ( geom = 'errorbar' ) +
+labs ( x = "DEGREE" , y = "WORDSUM SCORE" , title = "WORDSUM EXAPLINED BY DEGREE" ) +
+theme ( plot.title = element_text (hjust = 0.5, size = 16) )
+```
+
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+
+
+
 
 ## Inferential Results
 
