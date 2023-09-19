@@ -71,9 +71,8 @@ the mean and median pf the lt high school and the high school categories are low
 
 
 ```{r include=TRUE,echo=FALSE}
-model1 <- aov(WORDSUM~ DEGREE, data =mydata)
+model1 <- aov(WORDSUM ~ DEGREE , data = mydata )
 summary.aov(model1)
-plot(TukeyHSD(model1, conf.level = 0.99),las=2)
 ```
 
 #Disscusion and Conculsion 
