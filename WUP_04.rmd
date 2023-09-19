@@ -26,7 +26,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-Using Chatgpt and helper files close numerical data categorical data in the GSS data set. We will compare WORDSUM and how it effected by education level.
+Using Chatgpt and CAndP helper files close numerical data categorical data in the GSS data set. We will compare WORDSUM and how it effected by education level.
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
