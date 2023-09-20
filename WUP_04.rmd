@@ -75,6 +75,14 @@ model1 <- aov(WORDSUM ~ DEGREE , data = mydata )
 summary.aov(model1)
 ```
 
+
+```{r include=TRUE,echo=FALSE}
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1, conf.level = 0.99),las=2)
+```
+
+Our analysis provides strong evidence tht education levels have meanigful impact on WORDSUM test scores. The ANOVA test, p - value below 0.05, highlights a significant difference in scores among education levels. Turkeys HSD test further confirms that individuals with Assiosiate, Bacholor, or Graduate Degrees tend to achieve higher WORDSUM scores compared to those with only a high school education or less.
+
 #Disscusion and Conculsion 
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->cussion and Conclusion
