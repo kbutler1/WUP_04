@@ -87,5 +87,8 @@ Our analysis provides strong evidence tht education levels have meanigful impact
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->cussion and Conclusion
 
-In this write up we were given a mydata with the categories we were asked to analyze. for our x value it was a WORDSUM whicth
+$H_0$ There is no difference between the average score on the WORDSUM test and level of schooling DEGREE
+$H_a$ There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE
 
+
+In our analysis of WORDSUM scores and education levels using data from the 2018 General Social Survey, we discovered a significant relationship. Notably, differences in mean and median WORDSUM scores were observed across education levels, indicating that education does impact vocabulary scores. However, it's important to remember that while these findings suggest a connection, they don't establish causation. The relationship could be influenced by numerous factors such as educational quality, resources, or socioeconomic conditions. This underscores the need for further research to unravel the underlying mechanisms behind these differences. Our study highlights the complexity of educational outcomes and serves as a reminder that understanding the true impact of education on cognitive abilities requires a more nuanced approach.
